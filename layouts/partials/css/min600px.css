@@ -122,13 +122,25 @@ padding-bottom: 60px;
 div.main {
 padding-top: 0;
 }
-div.main .container .content .post-item {
-display: flex;
-list-style: none;
-padding-left: 1.5em;
-}
 div.main .container .content .post-item .meta {
-display: block;
+  display: block;
+  padding-bottom: 2px;
+}
+div.main .container .content .post-item .link {
+  display: block;
+  font-size: 1.2em;
+  padding-bottom: 3px;
+}
+div.main .container .content .post-item .summary {
+}
+div.main .container .content .post-item .more {
+  display: block;
+  padding-top: 2px;
+}
+div.main .container .content .post-item {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-bottom: 20px;
 }
 div.main.post {
 padding-top: 60px;

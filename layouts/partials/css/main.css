@@ -59,7 +59,6 @@ a:active {
   text-decoration: none;
 }
 html {
-  height: 100%;
   font-size: 16px;
 }
 body {
@@ -81,7 +80,6 @@ body {
   -ms-justify-content: flex-start;
   justify-content: flex-start;
   width: 100%;
-  min-height: 100%;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   color: #111111;
@@ -247,6 +245,18 @@ div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
 }
+div.footer .container .copyrightSpan {
+  flex-grow: 0.5;
+  text-align: start;
+  font-size: 14px;
+  margin-left: 6px;
+  margin-right: 6px;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
 div.footer .container .icons {
   flex-grow: 0.5;
   text-align: end;
@@ -277,6 +287,7 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
+  margin-top: 2em;
   margin-bottom: 4em;
 }
 div.main .content .page-heading {
@@ -379,11 +390,6 @@ div.main .container .content .groupby {
   padding-left: 0.5em;
 }
 div.main .container .content .post-item {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -423,11 +429,23 @@ div.main {
   padding-top: 32px;
 }
 div.main .container .content .post-item .meta {
-    display: block;
+  display: block;
+  padding-bottom: 2px;
+}
+div.main .container .content .post-item .link {
+  display: block;
+  font-size: 1.2em;
+  padding-bottom: 3px;
+}
+div.main .container .content .post-item .summary {
+}
+div.main .container .content .post-item .more {
+  display: block;
+  padding-top: 2px;
 }
 div.main .container .content .post-item {
-    display: flex;
-    list-style: none;
+  list-style: none;
+  margin-bottom: 35px;  
 }
 a {
   color: #428bca;
@@ -552,7 +570,7 @@ div.main .content .markdown ol {
   margin-bottom: 1.25rem;
 }
 div.main .content .markdown li {
-  margin-left: 2em;
+  margin-left: 0;
 }
 div.main .content .markdown em {
   font-style: italic;

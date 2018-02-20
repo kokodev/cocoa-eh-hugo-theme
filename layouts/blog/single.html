@@ -14,7 +14,10 @@
                         <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
                         {{end}}
                     {{end}}
+                    {{ if .Site.Params.readingTime }}
                     <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
+                    {{ end }}
+                    {{ if gt .Params.tags 0 }}
                     <div class="tags">
                         <ul>
                           {{ range .Params.tags }}
@@ -22,20 +25,7 @@
                           {{ end }}
                         </ul>
                     </div>
-                    <div class="tags">
-                        <ul>
-                          {{ if isset .Params "hacker_news_id" }}
-                            {{ if ne .Params.hacker_news_id "" }}
-                              <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
-                            {{ end }}
-                          {{ end }}
-                          {{ if isset .Params "lobsters_id" }}
-                            {{ if ne .Params.lobsters_id "" }}
-                              <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
-                            {{ end }}
-                          {{ end }}
-                        </ul>
-                    </div>
+                    {{ end }}
                 </div>
             </div>
             <div class="markdown">

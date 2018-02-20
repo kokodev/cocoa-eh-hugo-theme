@@ -1,5 +1,8 @@
 # Changelog
 
+> v1.4.0.1-kokodev
+- Adjust design to kokodev.de needs
+
 > v1.4.0
 
 - Add PR #48 : Fix the default archetype

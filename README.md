@@ -6,7 +6,9 @@
 
 A demo is available [here](https://kodewolf.com).
 
-> This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
+> This is a fork from the [Cocoa Enhanced](https://github.com/mtn/cocoa-eh-hugo-theme) theme, with some minor design adjustments for [kokodev.de](https://kokodev.de).
+
+> The Cocoa Enhanced theme itself is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
 [![screenshot](https://raw.githubusercontent.com/mtn/cocoa-eh-hugo-theme/master/images/screenshot.png)](https://raw.githubusercontent.com/mtn/cocoa-eh-hugo-theme/master/images/screenshot.png)
 

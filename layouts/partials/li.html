@@ -1,4 +1,8 @@
 <li class="post-item">
-    <span class="meta">{{ .Date.Format .Site.Params.dateform }}</span>
-    <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+    <div class="meta">{{ .Date.Format .Site.Params.dateform }}</div>
+    <a href="{{ .Permalink }}" class="link"><span>{{ .Title }}</span></a>
+    <span class="summary">{{- .Summary -}}</span>
+    {{- if .Truncated -}}
+		<a href='{{ .RelPermalink }}' class='more'>Read more&hellip;</a>
+	{{- end -}}
 </li>
